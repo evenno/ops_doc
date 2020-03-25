@@ -11,12 +11,12 @@ import requests
 
 class check_rabbitmq():
     host_list=['update_search_data','policy_engine','anti_spam_text','anti_spam_snapshot_callback','anti_spam_text','anti_spam_video','proc_express','proc_post','proc_review','report','lite_invite_share_img','ratelimitprocess']
-    rb_url='http://172.20.80.217:15672/api/queues/action_vhost'
+    rb_url='http://192.168.1.99:31572/api/queues/action_vhost'
 
     def check_message_ready(self):
         err_list='ERROR: pipi rabbitmq blocking. '
         try:
-            r = requests.get(self.rb_url, auth=('mon', 'mon')).json()
+            r = requests.get(self.rb_url, auth=('guest', 'guest')).json()
             for Q in r:
                 i = Q['name']
                 if i in self.host_list:
@@ -41,7 +41,7 @@ class check_rabbitmq():
                         "content": err_list
                     }
                 }
-            RobotURL = 'https://oapi.dingtalk.com/robot/send?access_token=5b48d8828c249da5a5f236a6568d3bf7fbdd0540ca33964d6575245eca12d3ea'
+            RobotURL = 'https://oapi.dingtalk.com/robot/send?access_token=122273485f692743c79d9f179bfa9a67eb825de1f01a1eb5d9add8911dd7e75f&label=1data_spider'
 
             try:
                 requests.post(url=RobotURL, headers=headers, data=json.dumps(ExpansionHost))
