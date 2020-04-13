@@ -1,4 +1,4 @@
-prometheus.yml
+Prometheus.yml
 # static_configs 静态配置, 默认  /metrics 接口
 # http://172.20.82.148:8081/metrics
 # consul_sd_configs  指定consul agent端口
@@ -65,7 +65,7 @@ scrape_configs:
         regex: '(.*)\.api\.ns'
         replacement: "${1}-api-c"
         target_label: job
-  - job_name: 'prometheus'
+  - job_name: 'Prometheus'
     static_configs:
     - targets: ['localhost:9090']
   - job_name: 'consul_exporter'

@@ -4,18 +4,18 @@ Alertmanager普罗米修斯报警
 
 
 
-https://github.com/prometheus/alertmanager
+https://github.com/Prometheus/alertmanager
 
 
 
-https://prometheus.io/download/
+https://Prometheus.io/download/
 
 
 
 
 
 
-https://github.com/prometheus/alertmanager/releases/download/v0.17.0/alertmanager-0.17.0.linux-amd64.tar.gz
+https://github.com/Prometheus/alertmanager/releases/download/v0.17.0/alertmanager-0.17.0.linux-amd64.tar.gz
 
 
 

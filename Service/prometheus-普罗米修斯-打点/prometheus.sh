@@ -1,10 +1,10 @@
-prometheus
+Prometheus
 普罗米修斯
 
 
-https://prometheus.io/docs/introduction/comparison/
+https://Prometheus.io/docs/introduction/comparison/
 
-https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2018/08/03/prometheus-usage.html#%E8%AF%B4%E6%98%8E
+https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2018/08/03/Prometheus-usage.html#%E8%AF%B4%E6%98%8E
 
 # 存储数据默认 ./data 目录下
 --storage.tsdb.path: This determines where Prometheus writes its database. Defaults to data/.
